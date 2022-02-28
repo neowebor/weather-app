@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #aebccb;
+    font-family: 'Museo Sans Rounded 100', sans-serif;
+}
+
+.app {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.card_wrap {
+    display: flex;
+    gap: 20px;
+}
+
+.title {
+    color: #000;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+input {
+    margin-bottom: 30px;
+    padding: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.input:focus {
+    border: 2px solid #ff0000
+}
+
+.loader_wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.switch {
+    background-color: #fff;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .card_wrap {
+        max-width: 400px;
+        flex-wrap: wrap;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+    }
+}
